@@ -23,7 +23,7 @@ responseurl = session.get(url)
 login_url = responseurl.url
 form_data = {
     'auth_user': '',
-	'auth_pass': '',
+    'auth_pass': '',
     'auth_voucher': voucher,
     'redirurl': 'http://192.168.10.1:8000/',
     'accept': 'Weiter',
