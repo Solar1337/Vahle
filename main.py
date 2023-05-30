@@ -4,7 +4,7 @@
 import requests
 
 url = 'http://192.168.10.1:8000'
-voucher = 'zzrhwa3'
+voucher = ''
 session = requests.Session()
 
 session.headers.update({
