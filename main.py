@@ -3,7 +3,9 @@
 
 import requests
 
-url = 'http://192.168.10.1:8000'
+url = ''
+user = ''
+passwd = ''
 voucher = ''
 session = requests.Session()
 
@@ -22,10 +24,10 @@ responseurl = session.get(url)
 
 login_url = responseurl.url
 form_data = {
-    'auth_user': '',
-    'auth_pass': '',
+    'auth_user': user,
+    'auth_pass': passwd,
     'auth_voucher': voucher,
-    'redirurl': 'http://192.168.10.1:8000/',
+    'redirurl': url,
     'accept': 'Weiter',
 }
 
